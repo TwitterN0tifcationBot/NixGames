@@ -15,43 +15,59 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 600px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 h1 {
     color: #333;
 }
 
-#choices {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
+#games-list {
+    margin-top: 20px;
+}
+
+.game-link {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.game-link:hover {
+    background-color: #0056b3;
 }
 
 button {
     padding: 10px 20px;
-    font-size: 1.2rem;
-    cursor: pointer;
+    margin-top: 20px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     background-color: #007bff;
     color: white;
 }
 
 button:hover {
     background-color: #0056b3;
-}
-
-#result {
-    font-size: 1.5rem;
-    margin: 20px 0;
-}
-
-#score {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
-#reset {
-    margin-top: 20px;
 }
