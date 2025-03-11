@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Games Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase Auth -->
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Offline Games Hub</h1>
+        <p>Play your favorite offline games anytime, anywhere!</p>
+        <div id="auth-container">
+            <button id="google-login">Login with Google</button>
+            <div id="email-login">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button id="sign-in">Sign In</button>
+                <button id="sign-up">Sign Up</button>
+            </div>
+        </div>
+        <div id="logged-in" style="display: none;">
+            <h2>Welcome, <span id="user-name"></span>!</h2>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
